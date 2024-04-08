@@ -40,12 +40,10 @@ export default function RootLayout({
     >
       <html lang="en">
         <body className={`${inter.className} bg-dark-2`}>
-          <StreamClientProvider>
-            {/* <StreamTheme as="main" className="my-custom-root-class"> */}
-            {children}
-            {/* </StreamTheme> */}
-            <Toaster />
-          </StreamClientProvider>
+          {/* <StreamTheme as="main" className="my-custom-root-class"> */}
+          {children}
+          {/* </StreamTheme> */}
+          <Toaster />
         </body>
       </html>
     </ClerkProvider>
