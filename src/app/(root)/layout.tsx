@@ -1,3 +1,4 @@
+import StreamClientProvider from "@/providers/StreamClientProvider";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -9,7 +10,11 @@ export const metadata: Metadata = {
 };
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
-  return <main>{children}</main>;
+  return (
+    <main>
+      <StreamClientProvider>{children}</StreamClientProvider>
+    </main>
+  );
 };
 
 export default RootLayout;
